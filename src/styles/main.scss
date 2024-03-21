@@ -18,6 +18,8 @@ h4{font-size: 14px;}
 h5{font-size: 12px;}
 
 body{
+    overflow-x: hidden;
+
     header{
         .navbarWhite{
             max-width: 1280px;
@@ -29,7 +31,7 @@ body{
             }
 
             @media (max-width: 768px){
-                width: 85%;
+                width: 90%;
             }
 
             ul{
@@ -46,14 +48,26 @@ body{
                         border-bottom: 1px solid transparent;
                         font-size: 16px;
                         font-family: globo, sans-serif;
+                        @media (max-width: 768px){
+                            padding: 8px 6px;
+                        }
+
                     }
                     .nav__item1{color: #0767de; &:hover{border-bottom: solid 3px #0767de;}}
                     .nav__item2{color: #c4180c; &:hover{border-bottom: solid 3px #c4180c;}}
                     .nav__item3{color: #07ab48; &:hover{border-bottom: solid 3px #07ab48;}}
                     .nav__item4{color: #ff6600; &:hover{border-bottom: solid 3px #ff6600;}}
                     .nav__item5{color: #fa0234; &:hover{border-bottom: solid 3px #fa0234;}}
-                    .nav__item6{color: #1d4b99; &:hover{border-bottom: solid 3px #1d4b99;}}
-                    .nav__item7{color: #c7180c; &:hover{border-bottom: solid 3px #c7180c;}}
+                    .nav__item6{color: #1d4b99; &:hover{border-bottom: solid 3px #1d4b99;}
+                        @media (max-width: 768px){
+                            display: none;
+                        }
+                }
+                    .nav__item7{color: #c7180c; &:hover{border-bottom: solid 3px #c7180c;}
+                        @media (max-width: 768px){
+                            display: none;
+                        }
+                }
                 }
 
                 .navbar__login_list{
@@ -86,6 +100,10 @@ body{
             margin-top: 2px;
             padding: 10px;
 
+            @media (max-width: 768px){
+                padding: 2px;
+            }
+
             ul{
                 max-width: 1280px;
                 width: 100%;
@@ -100,7 +118,7 @@ body{
                 }
 
                 @media (max-width: 768px){
-                    width: 85%;
+                    width: 90%;
                 }
 
                 li{
@@ -121,18 +139,30 @@ body{
                         padding-right: 24px;
 
                         img{padding-right: 4px; width: 24px;}
+                        p{
+                            color: white;
+                            @media (max-width: 768px){
+                                display: none;
+                            }
+                        }
                     }
 
                     .navbarRed__g1{
                         padding-left: 24px;
                         font-size: 36px;
                         font-weight: 700;
+                        @media (max-width: 768px){
+                            font-size: 30px;
+                        }
                     }
 
                     .navbarRed__uf{
                         font-size: 36px;
                         font-weight: 300;
                         transition: all ease .3s;
+                        @media (max-width: 768px){
+                            font-size: 30px;
+                        }
 
                         &:hover{
                             color: rgb(255, 255, 255, .8);
@@ -147,6 +177,10 @@ body{
                         border-radius: 6px;
                         margin-left: 16px;
 
+                        @media (max-width: 768px){
+                            background-color: transparent;
+                        }
+
                         img{width: 18px;}
                         input{
                             padding: 4px 8px;
@@ -158,6 +192,9 @@ body{
                             font-weight: 700;
                             font-family: globo, sans-serif;
                             outline: none;
+                            @media (max-width: 768px){
+                                display: none;
+                            }
 
                             &::placeholder{
                                 color: #fff;
@@ -185,7 +222,9 @@ body{
 
             .titulo{
                 @media (max-width: 768px){
-                    width: 85%;
+                    width: 90%;
+                    margin: 0 auto;
+                    font-size: 32px;
                 }
             }
 
@@ -196,7 +235,9 @@ body{
                 font-weight: 100;
 
                 @media (max-width: 768px){
-                    width: 85%;
+                    width: 90%;
+                    margin: 0 auto;
+                    font-size: 15px;
                 }
             }
             .creditos{
@@ -204,11 +245,22 @@ body{
                 color: #333;
                 font-size: 14px;
                 font-weight: 100;
+
+                @media (max-width: 768px){
+                    width: 90%;
+                    margin: 0 auto;
+                    font-size: 15px;
+                }
             }
             .data{
                 padding-top: 8px;
                 color: #333;
                 font-weight: 100;
+
+                @media (max-width: 768px){
+                    width: 90%;
+                    margin: 0 auto;
+                }
             }
 
             .buttons{
@@ -216,7 +268,8 @@ body{
                 justify-content: space-around;
 
                 @media (max-width: 768px){
-                    width: 85%;
+                    width: 90%;
+                    margin: 0 auto;
                 }
 
                 a{
@@ -227,7 +280,7 @@ body{
                     transition: all ease .3s;
 
                     @media (max-width: 768px){
-                        padding: 6px 96px;
+                        padding: 6px 48px;
                     }
 
                     &:hover{
@@ -247,19 +300,29 @@ body{
             margin: 0 auto;
             margin-bottom: 64px;
 
+            @media (max-width: 768px){
+                width: 90%;
+                margin: 0 auto;
+                font-size: 15px;
+            }
+
             img{
                 border-radius: 16px;
-                
+
                 @media (max-width: 768px){
-                    width: 85%;
+                    width: 100%;
                 }
             }
             h5{margin-top: 16px; margin-bottom: 40px;}
             p{
                 font-size: 18px;
                 line-height: 28px;
+
                 @media (max-width: 768px){
-                    width: 85%;
+                    width: 100%;
+                    margin: 0 auto;
+                    margin-bottom: 64px;
+                    font-size: 15px;
                 }
             }
         }
@@ -275,6 +338,10 @@ body{
                 @media (max-width: 1024px){
                     width: 720px;
                 }
+
+                @media (max-width: 768px){
+                    width: 360px;
+                }
             }
         }
 
@@ -286,15 +353,26 @@ body{
             border-top: rgb(0,0,0,.1) solid 1px;
 
             @media (max-width: 768px){
-                width: 85%;
+                width: 90%;
             }
 
             .sugerido{
                 border-bottom: rgb(0,0,0,.1) solid 1px;
                 padding-bottom: 32px;
 
+                @media (max-width: 768px){
+                    width: 90%;
+                    margin: 0 auto;
+                }
+
                 a{
                     text-decoration: none;
+
+                    h2{
+                        @media (max-width: 768px){
+                            font-size: 28px;
+                        }
+                    }
 
                     img{
                         max-width: 648px;
@@ -302,20 +380,23 @@ body{
                         margin-top: 48px;
 
                         @media (max-width: 768px){
-                            width: 85%;
+                            width: 100%;
                         }
                     }
 
                     h3{
                         @media (max-width: 768px){
-                            width: 85%;
+                            width: 90%;
                         }
                     }
                 }
             }
 
             .maisLidas{
-                
+                @media (max-width: 768px){
+                    width: 90%;
+                    margin: 0 auto;
+                }
 
                 .title{
                     display: flex;
@@ -337,8 +418,9 @@ body{
                         padding: 24px 0;
                         border-bottom: solid rgb(0,0,0,.1) 1px;
                         @media (max-width: 768px){
-                            width: 85%;
+                            width: 90%;
                         }
+                        
 
                         a{
                             display: flex;
@@ -359,6 +441,10 @@ body{
                             img{
                                 max-width: 214px;
                                 border-radius: 8px;
+
+                                @media (max-width: 768px){
+                                    display: none;
+                                }
                             }
                         }
                     }
@@ -375,9 +461,13 @@ body{
                 margin: 0 auto;
                 padding: 32px 0;
                 border-top: solid rgb(0,0,0,1) 2px;
+                @media (max-width: 768px){
+                    width: 90%;
+                    margin: 0 auto;
+                }
 
                 @media (max-width: 768px){
-                    width: 85%;
+                    width: 90%;
                 }
 
                 .noticia{
@@ -388,6 +478,9 @@ body{
                     a{
                         text-decoration: none;
                         display: flex;
+                        @media (max-width: 768px){
+                            display: block;
+                        }
 
                         h4{font-size: 16px;}
                         h3{font-size: 24px; color: #c4180c;}
@@ -410,6 +503,11 @@ body{
                 .vejaMais{
                     text-align: center;
                     margin-bottom: 16px;
+                    @media (max-width: 768px){
+                        width: 90%;;
+                        margin: 16px auto;
+                        
+                    }
 
                     a{
                         text-decoration: none;
@@ -438,6 +536,10 @@ body{
                         @media (max-width: 1024px){
                             width: 720px;
                         }
+
+                        @media (max-width: 768px){
+                            width: 360px;
+                        }
                     }
                 }
             }
@@ -464,7 +566,7 @@ body{
             padding: 14px 0;
             align-items: center;
             @media (max-width: 768px){
-                width: 85%;
+                width: 90%;
             }
 
             .left{
