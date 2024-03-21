@@ -332,7 +332,11 @@ body{
             width: 100%;
             margin: 0 auto;
             text-align: center;
-            h5{color: #666;}
+            h5{color: #666;
+                @media (max-width: 768px){
+                    font-size: 12px;
+                }
+            }
             
             img{
                 @media (max-width: 1024px){
