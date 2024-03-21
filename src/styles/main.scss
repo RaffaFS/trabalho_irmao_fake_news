@@ -59,12 +59,12 @@ body{
                     .nav__item4{color: #ff6600; &:hover{border-bottom: solid 3px #ff6600;}}
                     .nav__item5{color: #fa0234; &:hover{border-bottom: solid 3px #fa0234;}}
                     .nav__item6{color: #1d4b99; &:hover{border-bottom: solid 3px #1d4b99;}
-                        @media (max-width: 768px){
+                        @media (max-width: 480px){
                             display: none;
                         }
                 }
                     .nav__item7{color: #c7180c; &:hover{border-bottom: solid 3px #c7180c;}
-                        @media (max-width: 768px){
+                        @media (max-width: 480px){
                             display: none;
                         }
                 }
@@ -75,7 +75,7 @@ body{
                     font-weight: 00;
                     font-size: 16px;
 
-                    @media (max-width: 768px){
+                    @media (max-width: 1024px){
                         display: none;
                     }
 
